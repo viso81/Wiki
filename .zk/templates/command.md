@@ -2,7 +2,7 @@
 title: "{{title}}"
 id: {{id}}
 lang: zh-CN
-tags: [{{extra.os}}, {{extra.shell}}]
+tags: [commands, {{extra.os}}, {{extra.shell}}]
 os: {{extra.os}}
 shell: {{extra.shell}}
 date: {{format-date now}}
@@ -15,5 +15,3 @@ date: {{format-date now}}
 ```{{extra.shell}}
 
 ```
-
-## 备注
