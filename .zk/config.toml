@@ -203,6 +203,10 @@ dead-link = "error"
 
 [group.commands]
 paths = ["commands"]
-
 [group.commands.note]
 template = "command.md"
+
+[group.troubleshooting]
+paths = ["troubleshooting"]
+[group.troubleshooting.note]
+template = "troubleshooting.md"
