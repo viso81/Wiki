@@ -22,6 +22,22 @@ git config --global https.proxy http://127.0.0.1:7890
 # 个人项目一键提交执行该命令后可以用`git up`一键提交
 git config --global alias.up '!git add -A && git commit -m "update $(date +%Y-%m-%d)" && git push'
 ```
+
+## 查看及修改配置
+```shell
+# 全局
+git config --global --list
+git config --global --edit  
+# 本地
+git config --local --list
+git config --local --edit
+# 查看具体字段来源
+git config --show-origin --get user.name
+# 查看所有生效配置及来源
+git config --list --show-origin
+
+```
+
 ## 创建项目
 ```bash
 # 创建项目目录
