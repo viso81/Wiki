@@ -4,7 +4,6 @@ id: {{id}}
 lang: zh-CN
 tags: [commands, {{extra.os}}, {{extra.shell}}]
 os: {{extra.os}}
-shell: {{extra.shell}}
 date: {{format-date now}}
 ---
 
@@ -12,6 +11,6 @@ date: {{format-date now}}
 
 
 ## 命令
-```{{extra.shell}}
+```shell
 
 ```
