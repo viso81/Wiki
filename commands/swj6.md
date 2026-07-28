@@ -1,14 +1,14 @@
 ---
-title: "linux 常用命令"
+title: "xdg-settings, xdg-open"
 id: swj6
 lang: zh-CN
-tags: [commands, linux, bash]
+tags: [commands, linux, xdg-settings, xdg-open]
 os: linux
 shell: bash
 date: 2026-07-25
 ---
 
-# linux 常用命令
+# xdg-settings, xdg-open
 
 
 ## xdg-settings
@@ -22,12 +22,4 @@ xdg-settings get default-web-browser
 # 用默认浏览器打开链接
 xdg-open https://github.com
 
-```
-
-## wl-copy
-从命令哈复制字符到系统剪切板,必须是Wayland环境
-```bash
-cat 文件 | wl-copy
-# 安装
-sudo pacman -S wl-clipboard
 ```
