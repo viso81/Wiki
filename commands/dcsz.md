@@ -1,5 +1,5 @@
 ---
-title: fzf
+title: "fzf"
 tags: [linux, commands, bash]
 os: linux
 shell: bash

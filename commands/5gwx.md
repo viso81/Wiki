@@ -1,5 +1,5 @@
 ---
-title: systemctl
+title: "systemctl"
 tags: [linux, bash, commands]
 os: linux
 shell: bash
