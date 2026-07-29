@@ -58,6 +58,8 @@ git remote -v
 git branch -M main
 # 推送至远程仓库
 gir push -u origin main
+# 修改本地分支名
+git branch -m <原名> <改名>
 ```
 
 ## git换ssh连接
