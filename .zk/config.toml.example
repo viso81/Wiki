@@ -1,5 +1,6 @@
 # zk configuration file
 [note]
+
 template = "default.md"
 
 
@@ -7,6 +8,7 @@ template = "default.md"
 
 
 [format.markdown]
+
 link-format = "wiki"
 # Enable support for #hashtags.
 hashtags = true
@@ -34,15 +36,26 @@ dead-link = "error"
 [filter]
 
 [alias]
-conf = '$EDITOR "$ZK_NOTEBOOK_DIR/.zk/config.toml"'
-nc = "zk new -g commands $argv"
-nt = "zk new -g troubleshooting $argv"
-new = 'zk new --working-dir "$ZK_NOTEBOOK_DIR" $argv'
+
+# fish
+# conf = '$EDITOR "$ZK_NOTEBOOK_DIR/.zk/config.toml"'
+# nc = "zk new -g commands $@"
+# nt = "zk new -g troubleshooting $@"
+# new = 'zk new --working-dir "$ZK_NOTEBOOK_DIR" $@'
+
+# windows
+# 注意: 需要git的bash
+# 注意: 最后必须用_占位,跳过$0
+nc  = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new -g commands \"$@\"" _'
+nt  = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new -g troubleshooting \"$@\"" _'
+new = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new --working-dir \"$ZK_NOTEBOOK_DIR\" \"$@\"" _'
+
 
 [group.commands]
 paths = ["commands"]
 [group.commands.note]
 template = "command.md"
+
 
 [group.troubleshooting]
 paths = ["troubleshooting"]
