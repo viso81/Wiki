@@ -11,8 +11,40 @@ date: 2026-07-25
 # git
 版本控制,团队协作的软件
 
-## 命令
-```bash
+
+## 冲突处理
+```shell
+# 罗列冲突
+git diff --name-only --diff-filter=U
+
+# <<<<<<<< HEAD
+# (本机内容)
+# ============
+# (远程内容)
+# >>>>>>>> .
+git diff <冲突文件名>
+# 保留本地
+git checkout --ours <冲突文件名>
+git add <冲突文件名>
+# 保留远程
+git chechout --theirs <冲突文件名>
+git add <冲突文件名>
+```
+
+
+## 本地分支改名
+```shell
+git branch -m master main # 本地masteer分支改名为main
+git branch --set-upstream-to=origin/main main # 让本地main分支跟踪远程main分支
+git pull
+# 分支追踪
+git branch --set-upstream-to=<远程分支> <本地分支>
+git pull
+```
+
+
+## - 查看及修改配置
+```shell
 # 查看代理
 git config --global --get http.proxy
 git config --global --get https.proxy
@@ -21,10 +53,6 @@ git config --global http.proxy http://127.0.0.1:7890
 git config --global https.proxy http://127.0.0.1:7890
 # 个人项目一键提交执行该命令后可以用`git up`一键提交
 git config --global alias.up '!git add -A && git commit -m "update $(date +%Y-%m-%d)" && git push'
-```
-
-## 查看及修改配置
-```shell
 # 全局
 git config --global --list
 git config --global --edit  
@@ -35,8 +63,8 @@ git config --local --edit
 git config --show-origin --get user.name
 # 查看所有生效配置及来源
 git config --list --show-origin
-
 ```
+
 
 ## 创建项目
 ```bash
@@ -61,6 +89,7 @@ gir push -u origin main
 # 修改本地分支名
 git branch -m <原名> <改名>
 ```
+
 
 ## git换ssh连接
 国内用http和https不稳，换成ssh后使用起来方便很多
