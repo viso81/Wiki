@@ -1,14 +1,9 @@
 # zk configuration file
 [note]
-
 template = "default.md"
 
 
-[extra]
-
-
 [format.markdown]
-
 link-format = "wiki"
 # Enable support for #hashtags.
 hashtags = true
@@ -25,30 +20,26 @@ multiword-tags = true
 fzf-preview = "bat -p --color always {-1}"
 # fzf-preview = "glow {-1}"
 
-[lsp]
+
 [lsp.diagnostics]
 #wiki-title = "hint"
 # Warn for dead links between notes.
 dead-link = "error"
 
-[lsp.completion]
-
-[filter]
 
 [alias]
-
 # fish
-# conf = '$EDITOR "$ZK_NOTEBOOK_DIR/.zk/config.toml"'
-# nc = "zk new -g commands $@"
-# nt = "zk new -g troubleshooting $@"
-# new = 'zk new --working-dir "$ZK_NOTEBOOK_DIR" $@'
+conf = '$EDITOR "$ZK_NOTEBOOK_DIR/.zk/config.toml"'
+nc = "zk new -g commands $argv"
+nt = "zk new -g troubleshooting $argv"
+new = 'zk new --working-dir "$ZK_NOTEBOOK_DIR" $argv'
 
 # windows
 # 注意: 需要git的bash
 # 注意: 最后必须用_占位,跳过$0
-nc  = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new -g commands \"$@\"" _'
-nt  = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new -g troubleshooting \"$@\"" _'
-new = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new --working-dir \"$ZK_NOTEBOOK_DIR\" \"$@\"" _'
+#nc  = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new -g commands \"$@\"" _'
+#nt  = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new -g troubleshooting \"$@\"" _'
+#new = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new --working-dir \"$ZK_NOTEBOOK_DIR\" \"$@\"" _'
 
 
 [group.commands]
