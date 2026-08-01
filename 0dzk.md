@@ -12,7 +12,7 @@ tags: []
 
 - **建立镜像**
 
-'''shell
+```shell
 
 & fsutil file createnew D:\vm\qemu\vars.fd 3653632
 & copy "C:\Program Files\qemu\share\edk2-x86_64-code.fd" D:\vm\qemu\code.fd
@@ -29,7 +29,7 @@ tags: []
   -device intel-hda -device hda-duplex,audiodev=snd0 `
   -netdev user,id=net0 -device e1000,netdev=net0
 
-'''
+```
 
 - **安装arch后**
 
