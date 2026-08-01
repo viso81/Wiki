@@ -1,3 +1,6 @@
+---
+title: "Arch + chezmoi 系统迁移清单"
+---
 # Arch + chezmoi 系统迁移清单
 
 > 用途：换新机器 / 重装系统时，按顺序迁移 Arch Linux + chezmoi 管理的配置
