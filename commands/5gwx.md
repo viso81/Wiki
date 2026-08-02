@@ -1,12 +1,10 @@
 ---
 title: "systemctl"
-tags: [linux, bash, commands]
-os: linux
-shell: bash
+tags: [linux, systemctl, commands]
 date: 2026-07-25
 ---
 
-# systemctl
+# command: systemctl
 系统服务命令
 
 ## 命令

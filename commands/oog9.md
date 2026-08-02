@@ -2,12 +2,11 @@
 title: "trans"
 id: oog9
 lang: zh-CN
-tags: [commands, ]
-os: 
+tags: [commands, linux, trans]
 date: 2026-08-01
 ---
 
-# trans
+# command: trans
 translate-shell是一款命令行下翻译软件
 
 ## 安装

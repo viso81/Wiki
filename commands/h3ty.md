@@ -2,13 +2,13 @@
 title: "git"
 id: h3ty
 lang: zh-CN
-tags: [commands, linux, bash, windows, powershell, git]
+tags: [commands, linux, windows, git]
 os: linux
 shell: bash
 date: 2026-07-25
 ---
 
-# git
+# command: git
 版本控制,团队协作的软件
 
 

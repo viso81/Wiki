@@ -7,7 +7,7 @@ os: linux
 date: 2026-07-27
 ---
 
-# wl-copy
+# command: wl-copy
 从命令哈复制字符到系统剪切板,必须是Wayland环境
 
 ## 安装

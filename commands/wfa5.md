@@ -2,13 +2,11 @@
 title: "chezmoi"
 id: wfa5
 lang: zh-CN
-tags: [commands, linux, bash]
-os: linux
-shell: bash
+tags: [commands, linux, chezmoi]
 date: 2026-07-26
 ---
 
-# chezmoi
+# command: chezmoi
 配置同步管理软件
 
 ## 命令

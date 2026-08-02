@@ -7,7 +7,7 @@ os:
 date: 2026-08-01
 ---
 
-# wmux
+# command: wmux
 
 
 ## 安装

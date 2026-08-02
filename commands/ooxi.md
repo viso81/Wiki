@@ -3,11 +3,10 @@ title: "scoop"
 id: ooxi
 lang: zh-CN
 tags: [commands, windows, scoop, 包管理器]
-os: windows
 date: 2026-08-01
 ---
 
-# scoop
+# command: scoop
 
 
 ## 安装

@@ -2,13 +2,11 @@
 title: "yay"
 id: 8iio
 lang: zh-CN
-tags: [linux, commands, bash]
-os: linux
-shell: bash
+tags: [linux, commands, yay]
 date: 2026-07-25
 ---
 
-# yay
+# command: yay
 AUR源软件管理器
 
 ## 命令
