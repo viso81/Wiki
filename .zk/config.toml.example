@@ -33,21 +33,21 @@ dead-link = "error"
 [alias]
 # fish
 conf = '$EDITOR "$ZK_NOTEBOOK_DIR/.zk/config.toml"'
-nc = "zk new -g commands $argv"
+nc = "zk new -g command commands $argv"
 nt = "zk new -g troubleshooting $argv"
 new = 'zk new --working-dir "$ZK_NOTEBOOK_DIR" $argv'
 
 # windows
 # 注意: 需要git的bash
 # 注意: 最后必须用_占位,跳过$0
-# nc  = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new -g commands \"$@\"" _'
+# nc  = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new -g command commands \"$@\"" _'
 # nt  = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new -g troubleshooting \"$@\"" _'
 # new = 'C:/PROGRA~1/Git/bin/bash.exe -c "zk new --working-dir \"$ZK_NOTEBOOK_DIR\" \"$@\"" _'
 
 
-[group.commands]
+[group.command]
 paths = ["commands"]
-[group.commands.note]
+[group.command.note]
 template = "command.md"
 
 
